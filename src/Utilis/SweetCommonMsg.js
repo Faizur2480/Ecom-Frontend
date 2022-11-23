@@ -1,0 +1,12 @@
+export const createdMsg="Created Sucessfully!" 
+export const deletedMsg="Deleted Sucessfully!" 
+export const updatedMsg="Updated Sucessfully!" 
+export const successIcon = "success";
+export const errorIcon = "error";
+export const warIcon = "warning";
+export const okBtn = "OK"
+export const reqMsg = "is required!"
+export const responseStatus = "Please contact Admin..."
+export const inputReqMsg = "Mandatory Input Required!"
+export const validUser = "User Invalid!"
+export const border = " 3px solid white"
