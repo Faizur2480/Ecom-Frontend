@@ -1,5 +1,6 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import Dashboard from "../Components/Dashboard/Dashboard";
 import Login from "../Components/Login/Login";
 import Signup from "../Components/Login/Signup";
 
@@ -16,6 +17,11 @@ export default function CommonRouter() {
             path="/signup"
             match
             element={<Signup />}
+          ></Route>
+           <Route
+            path="/dashboard"
+            match
+            element={<Dashboard/>}
           ></Route>
         </Routes>
       </div>

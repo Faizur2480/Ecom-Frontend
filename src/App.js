@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Login from "./Components/Login/Login";
 import Signup from "./Components/Login/Signup";
 import CommonRouter from "./Utilis/CommonRouter";
+import Dashboard from "./Components/Dashboard/Dashboard";
 function App() {
   return (
     <div>
@@ -12,6 +13,7 @@ function App() {
           <Routes>
             <Route path="/" match element={<Login />}></Route>
             <Route path="/signup" match element={<Signup/>}></Route>
+            <Route path="/dashboard" match element={<Dashboard/>}></Route>
           </Routes>
         ) : (
        <CommonRouter />
