@@ -1,17 +1,18 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import { useState} from 'react';
-import "../Signup/Signup.css"
-import LoginService from "../Login/LoginService";
+import "./Signup.css"
 import swal from 'sweetalert';
-import {
+
+import LoginService from '../Login/LoginService';
+import { inputReqMsg,
   createdMsg,
-  okBtn,
-  responseStatus,
   successIcon,
-  inputReqMsg,
-  warIcon
-} from "../../Utilis/SweetCommonMsg";
+  warIcon ,
+  okBtn ,
+  responseStatus,
+ 
+ } from '../../Utilis/SweetCommonMsg';
 
 function Signup  () {
   const [firstName, setFirstName] = useState("");
@@ -74,7 +75,7 @@ function Signup  () {
 
   const navigate = useNavigate();
   return (
-
+<div className='signupbody'>
 <div className="container">
   <div className="title">Registration</div>
   <div className="content">
@@ -121,6 +122,7 @@ function Signup  () {
       </div>
     </form>
   </div>
+</div>
 </div>
   );
 }

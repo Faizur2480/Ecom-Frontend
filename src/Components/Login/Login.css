@@ -1,24 +1,15 @@
 
-/* Login CSS */
 
-
-/* .container-image{
-  background-image:url(/bg.png);
-  background-blend-mode:lighten ;
-} */
-/* Login CSS */
-
-
-
-.container{
-    max-width: 700px;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
-    padding: 25px 30px;
-    border-radius: 12px;
-    box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+.logincontainer{
+  max-width: 300px;
+  width: 100%;
+  background-color: rgb(0, 0, 0);
+  padding: 25px 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  margin-top: 55px;
   }
-  .contain .logintitle{
+  .logincontainer .logintitle{
     font-size: 25px;
     font-weight: 900;
     position: relative;
@@ -73,7 +64,7 @@
     background: linear-gradient(-135deg, #000000,#6a2585);
     }
    @media(max-width: 584px){
-   .contain{
+   .containerer{
     max-width: 100%;
   }
   form .login-details .input-box{
@@ -92,7 +83,7 @@
     }
     }
     @media(max-width: 459px){
-    .contain .content .category{
+    .container .content .category{
       flex-direction: column;
     }
   }

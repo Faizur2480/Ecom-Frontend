@@ -7,23 +7,11 @@ import Signup from "../Components/Signup/Signup";
 export default function CommonRouter() {
   return (
     <div>
-        <Routes>
-          <Route
-            path="/"
-            match
-            element={<Login />}
-          ></Route>
-          <Route
-            path="/signup"
-            match
-            element={<Signup />}
-          ></Route>
-           <Route
-            path="/dashboard"
-            match
-            element={<Dashboard/>}
-          ></Route>
-        </Routes>
-      </div>
+      <Routes>
+          <Route path="/" match element={<Login/>}></Route>
+        <Route path="/signup" match element={<Signup />}></Route>
+        <Route path="/dashboard" match element={<Dashboard />}></Route>
+      </Routes>
+    </div>
   );
 }
