@@ -1,7 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-// import background from "./../Img/bg.png";
+import "../Login/Login.css"
 import swal from 'sweetalert';
 import {
   okBtn,
@@ -57,15 +57,10 @@ function Login  () {
 
   const navigate = useNavigate();
   return (
-    <div className="contain">
+    <div className="container">
     <div className="logintitle">LOGIN</div>
     <div className="content">
       <form action="#">
-
-        {/* <div className="container-image">
-          <img src={background} alt="background" />
-  </div> */}
-
         <div className="login-details">
           <div className="input-box">
             <span className="logindetails">Username</span>

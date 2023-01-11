@@ -2,7 +2,7 @@ import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Dashboard from "../Components/Dashboard/Dashboard";
 import Login from "../Components/Login/Login";
-import Signup from "../Components/Login/Signup";
+import Signup from "../Components/Signup/Signup";
 
 export default function CommonRouter() {
   return (

@@ -1,13 +1,14 @@
 import React from 'react'
+import '../Dashboard/Dashboard.css'
 
 function Dashboard  () {
   return (
-    <div class="bgtxt">
-    <div class="middle">
-      <h1>PAGE UNDER CONSTRUCTION</h1>
-      <h5>Thanks For Your Visit</h5>
-    </div>
+   
+    <nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    handleSubm
   </div>
+</nav>
   );
 }
 

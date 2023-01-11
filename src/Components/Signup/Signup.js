@@ -1,6 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom";
 import { useState} from 'react';
+import "../Signup/Signup.css"
 import LoginService from "../Login/LoginService";
 import swal from 'sweetalert';
 import {
