@@ -18,7 +18,7 @@ function Signup  () {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [phoneNumber, setPhoneNumber] = useState("");
-  const [country, setCountry] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword]=useState("");
 
@@ -30,17 +30,17 @@ function Signup  () {
         firstName: firstName,
         lastName: lastName,
         phoneNumber:phoneNumber,
-        country:country,
         email: email,
-        password:password
+        password:password,
+        confirmPassword: confirmPassword 
       };
       if (
         request.firstName ==="" ||
         request.lastName === "" ||
         request.phoneNumber === "" ||
-        request.country === "" ||
         request.email === ""||
-        request.password === ""
+        request.password === ""||
+        request.confirmPassword === "" 
 
       ) {
         swal({
@@ -97,11 +97,6 @@ function Signup  () {
            onChange={(event) => setPhoneNumber(event.target.value)} />
         </div>
         <div className="input-box">
-          <span className="details">Country</span>
-          <input type="text" placeholder="Enter your country" required="" 
-           onChange={(event) => setCountry(event.target.value)}/>
-        </div>
-        <div className="input-box">
           <span className="details">Email</span>
           <input type="text" placeholder="Enter your email" required="" 
            onChange={(event) => setEmail(event.target.value)}/>
@@ -111,10 +106,11 @@ function Signup  () {
           <input type="password" placeholder="Enter your password" required="" 
            onChange={(event) => setPassword(event.target.value)}/>
         </div>
-        {/* <div className="input-box">
+        <div className="input-box">
           <span className="details">Confirm Password</span>
-          <input type="text" placeholder="Confirm your password" required="" />
-        </div> */}
+          <input type="text" placeholder="Confirm your password" required=""
+            onChange={(event) => setConfirmPassword(event.target.value)}/>
+        </div>
       </div>
       <div >
         <button className="button" type="submit" Value="Register" onClick={handleSubmit}>Register</button>
